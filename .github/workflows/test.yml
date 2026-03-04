@@ -12,6 +12,12 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v6
 
-            - name: Ping router
+            - name: vlan creation
               run: |
-                ping 10.0.0.25
+                vlan 10
+                description:Vlan 10 created
+                exit
+                vlan 20
+                description:Vlan 20 cp_mgmt_threat_protection_override:
+                exit
+                
